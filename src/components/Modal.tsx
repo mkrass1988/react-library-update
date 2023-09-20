@@ -1,4 +1,4 @@
-import ContactForm from './ContactForm'
+import BookForm from './BookForm'
 
 type Props = {
     id?: string[],
@@ -29,7 +29,7 @@ const Modal = ( props: Props ) => {
                         </p>
                     </div>
                     <div className="flex flex-col items-center text-center mt-3 p-2">
-                        <ContactForm id={props.id } />
+                        <BookForm id={props.id } />
                     </div>
                 </div>
             </div>

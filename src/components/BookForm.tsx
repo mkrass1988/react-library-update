@@ -7,7 +7,7 @@ import { server_calls } from "../api/server"
 import { useDispatch, useStore } from "react-redux"
 import { chooseTitle, chooseAuthor, chooseLength, chooseCover, chooseISBN } from "../redux/slices/RootSlice"
 
-import Box from '@mui/material/Box';
+// import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -17,7 +17,7 @@ interface ContactFormProps {
   id?: string[]
 }
 
-const ContactForm = ( props:ContactFormProps) => {
+const BookForm = ( props:ContactFormProps) => {
   const { register, handleSubmit } = useForm({})
   const dispatch = useDispatch();
   const store = useStore();
@@ -101,4 +101,4 @@ const ContactForm = ( props:ContactFormProps) => {
   )
 }
 
-export default ContactForm
+export default BookForm
