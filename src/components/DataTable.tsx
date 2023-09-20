@@ -10,8 +10,8 @@ const columns: GridColDef[] = [
     { field: 'title', headerName: "Title", flex: 1},
     { field: 'author', headerName: "Author", flex: 1},
     { field: 'length', headerName: "Length", flex: 1},
-    { field: 'cover', headerName: "Cover", flex: 1},
-    { field: 'isbn', headerName: "ISBN", flex: 1}
+    { field: 'isbn', headerName: "ISBN", flex: 1},
+    { field: 'cover', headerName: "Cover", flex: 1}
 ]
 
 function DataTable() {
