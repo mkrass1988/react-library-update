@@ -1,6 +1,6 @@
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import routes from './config/routes'
-import Navbar from './components/Navbar'
+import Navbar2 from './components/Navbar2'
 import { Provider } from 'react-redux'
 import store from './redux/store'
 import { Auth0Provider } from '@auth0/auth0-react';
@@ -17,7 +17,7 @@ function App() {
       }}
     >
       <HashRouter>
-        <Navbar />
+        <Navbar2 />
         <Provider store={store}>
           <Routes>
             { routes.map((route: any, index: any) => (
